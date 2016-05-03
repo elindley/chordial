@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Chordial</title>
-    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/ico" href="favicon.ico"
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
@@ -26,10 +25,16 @@
         </div>
       </div>
       <div class="row row-centered">
-        <select id="chord-selector" name="chord-selector">
-          <option value="c-major">C Major</option>
-          <option value="d-major">D Major</option>
-          <option value="e-major">E Major</option>
+        <select id="root-selector" name="root-selector">
+          <option value="c">C</option>
+          <option value="d">D</option>
+          <option value="e">E</option>
+        </select>
+        <select id="scale-selector" name="scale-selector">
+          <option value="major">Major</option>
+          <option value="minor">Minor</option>
+          <option value="major_7">Major 7</option>
+          <option value="minor_7">Minor 7</option>
         </select>
         <p id="chord-selected"></p>
       </div>
