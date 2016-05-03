@@ -1,0 +1,43 @@
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-centered h1{
+  text-align: center;
+}
+
+.hero-unit{
+  height: 300px;
+  text-align: center;
+  background-image: url("../img/logo_1.png");
+  background-size: 30%;
+  background-position: 60%;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-image: url("../img/background_flowers_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.row {
+  background: white;
+  padding-bottom: 100px;
+}
+.flashcard {
+  font-size: 100px;
+  text-align: center;
+}
+
+#cardholder{
+  text-align: center;
+}
