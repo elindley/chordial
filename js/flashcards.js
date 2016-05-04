@@ -11,7 +11,7 @@ var scale_e_major = Array("E minor", "F# diminished", "G# Major", "A minor", "B 
   //major 7
 var scale_c_major_7 = Array("C \u25B37", "D min7", "E min7", "F \u25B37", "G7", "A min7", "B min7 \u266D5");
 
-
+//main function
 function selectChord(){
     //get value of chord from #root-selector html dropdown menu
   var selected_root = $("#root-selector").val();
@@ -42,7 +42,7 @@ function selectChord(){
     items = scale_c_major_7;
   }
   //select a random chord from the scale array when the card is clicked
-  $(".flashcard").click(function(){
+  $("#newcard").click(function(){
       var item = items[Math.floor(Math.random()*items.length)];
       $(".flashcard").text(item);
   });
@@ -56,10 +56,24 @@ $("#scale-selector").change(selectChord);
 
   //simulate a click to refresh the card when a new root or scale is selected from dropdown
 $("#root-selector").change(function(){
-  $(".flashcard").trigger("click");
+  $("#newcard").trigger("click");
 });
 $("#scale-selector").change(function(){
-  $(".flashcard").trigger("click");
+  $("#newcard").trigger("click");
+});
+  //generate a new card when the page loads
+$(document).ready(function(){
+  $("#newcard").trigger("click");
+});
+ //new card when enter or space is pressed
+$(document).keypress(function(e) {
+    if((e.which == 13) || (e.which == 32))  {
+        $("#newcard").trigger("click");
+    }
 });
 
 selectChord();
+
+
+//load scales json file into order list
+$("#show-json").load("scales.json");

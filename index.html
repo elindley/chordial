@@ -8,7 +8,7 @@
     <title>Chordial</title>
     <link rel="icon" type="image/ico" href="favicon.ico"
     <!-- Bootstrap -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -19,12 +19,12 @@
   </head>
   <body>
     <div class="container">
-
-      <div class="row row-centered">
         <div class="hero-unit">
+          <img class="small-logo" src="img/logo_small.svg" alt="logo" />
+          <h1>Chordial</h1>
         </div>
-      </div>
-      <div class="row row-centered">
+
+      <div class="row controls">
         <select id="root-selector" name="root-selector">
           <option value="c">C</option>
           <option value="d">D</option>
@@ -38,13 +38,15 @@
         </select>
         <p id="chord-selected"></p>
       </div>
-      <div class="row row-centered">
-        <div class="col-md-3 col-centered" id="cardholder">
-          <button type="button" name="flashcard" class="btn btn-primary flashcard">Click Me!</button>
-          <!--
-          show JSON file in ordered list to test
-          <ol id="json-list"></ol>
-          -->
+      <div class="row new-card">
+        <button type="button" name="newcard" id="newcard">New Card</button>
+      </div>
+      <div class="row">
+        <div class="col-md-6 id="cardholder">
+          <button type="button" name="flashcard" class="btn btn-primary flashcard"></button>
+        </div>
+        <div id="show-json">
+          <p class="show-json"></p>
         </div>
       </div>
     </div>
