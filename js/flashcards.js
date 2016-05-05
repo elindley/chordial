@@ -76,4 +76,15 @@ selectChord();
 
 
 //load scales json file into order list
-$("#show-json").load("scales.json");
+//$("#show-json").load("scales.json");
+
+var xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = function (){
+    if(xhr.readyState === 4){
+      //var scales = JSON.parse(xhr.responseText);
+      console.log(xhr.responseText);
+    }
+};
+
+xhr.open('GET', 'scales.json');
+xhr.send();

@@ -1,12 +1,12 @@
-{"c_major":[
+{"c_major_new":[
   {"scaleDegree":"1", "chordName":"C Major"},
   {"scaleDegree":"2", "chordName":"D Minor"},
   {"scaleDegree":"3", "chordName":"E Minor"},
   {"scaleDegree":"4", "chordName":"F Major"},
   {"scaleDegree":"5", "chordName":"G Major"},
   {"scaleDegree":"6", "chordName":"A Minor"},
-  {"scaleDegree":"7", "chordName":"B Diminished"},
-]}
+  {"scaleDegree":"7", "chordName":"B Diminished"}
+]},
 {"d_major":[
   {"scaleDegree":"1", "chordName":"D Major"},
   {"scaleDegree":"2", "chordName":"E Minor"},
@@ -14,5 +14,5 @@
   {"scaleDegree":"4", "chordName":"G Major"},
   {"scaleDegree":"5", "chordName":"A Major"},
   {"scaleDegree":"6", "chordName":"B Minor"},
-  {"scaleDegree":"7", "chordName":"C# Diminished"},
+  {"scaleDegree":"7", "chordName":"C# Diminished"}
 ]}
